@@ -10,13 +10,42 @@
 //   Console.WriteLine($"{names[i]} ger {leksaker[i]} betyget {goobieWoobies[r]}");
 // }
 // Console.ReadLine();
-using System.Security.Authentication;
+
+// List<string> cities = [];
+// string city = "";
+
+// while (city != "exit")
+// {
+//   Console.Clear();
+//   Console.WriteLine("Type exit at anytime to see the list and quit.");
+//   Console.WriteLine("write the name of a city:");
+//   city = Console.ReadLine();
+//   if (city == "exit")
+//   {
+
+//   }
+//   else
+//   {
+//   Console.Clear();
+//   cities.Add(city);
+//   int i = -1;
+//   Console.WriteLine("List of cities:");
+//   foreach (string citys in cities)
+//   {
+//     i++;
+//     Console.WriteLine(cities[i]);
+//   }
+//   Console.WriteLine("Click any button to continue.");
+//   Console.ReadKey();
+//   }
+// }
 
 List<string> cities = [];
 string city = "";
 
 while (city != "exit")
 {
+  Console.Clear();
   Console.WriteLine("Type exit at anytime to see the list and quit.");
   Console.WriteLine("write the name of a city:");
   city = Console.ReadLine();
@@ -26,17 +55,17 @@ while (city != "exit")
   }
   else
   {
-  Console.Clear();
-  cities.Add(city);
-  int i = -1;
-  Console.WriteLine("List of cities:");
-  foreach (string citys in cities)
-  {
-    i++;
-    Console.WriteLine(cities[i]);
-    
-  }
-  Console.ReadLine();
+    Console.Clear();
+    cities.Add(city);
   }
 }
-Console.ReadLine();
+int i = -1;
+Console.WriteLine("List of cities:");
+Console.WriteLine("Click any button to continue.");
+foreach (string citys in cities)
+{
+  i++;
+  Console.WriteLine(cities[i]);
+}
+
+Console.ReadKey();
